@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+}
+
+img {
+    width: calc(64px * 4);
+    height: calc(64px * 4);
+    margin: 30px;
+    box-shadow: 0 2px 5px 2px darkgrey;
+    background: white;
+}
