@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #eee;
+    background: #ccc;
 }
 
 img {
@@ -13,4 +13,28 @@ img {
     margin: 30px;
     box-shadow: 0 2px 5px 2px darkgrey;
     background: white;
+    transition: box-shadow 600ms;
+}
+
+img:hover {
+    box-shadow: 0 2px 6px 3px darkgrey;
+}
+
+.img-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-types {
+    margin: 20px 50px;
+    background: #eee;
+    box-shadow: 0 2px 5px 2px #aaa;
+}
+
+.image-types h2 {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
