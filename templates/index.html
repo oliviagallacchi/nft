@@ -10,9 +10,9 @@
         <h1>NFT Parts</h1>
         <div class="display-container">
             {% for type, items in images.items() %}
-            <div class="image-types {{type}}">
+            <div class="image-types">
                 <h2>{{ type }}</h2>
-                <div class="img-list">
+                <div class="img-list {{type}}">
                     {% for img in items %}
                     <img src="{{ url_for('static', filename=img) }}" alt="">
                     {% endfor %}
