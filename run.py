@@ -10,8 +10,8 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 @app.route("/")
 def home():
     images = {}
-    # types = list(glob.glob("static/imgs/*"))
-    types = ["arms", "bg"]
+    types = list(glob.glob("static/imgs/*"))
+    types = list(map(lambda x: x[12:], types))
     for t in types:
         tmp = list(glob.glob(f"static/imgs/{t}/*.png"))
         tmp = list(map(lambda x: x[7:], tmp))
