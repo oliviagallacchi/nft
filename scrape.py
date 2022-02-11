@@ -26,8 +26,9 @@ bg = Image.open(BytesIO(r.content))
 
 collection = []
 
-arms = soup.select(".arms img")
-collection.append(pick_url(arms, url))
+for t in [".arms", ".shoes", ".hats"]:
+    tmp = soup.select(f"{t} img")
+    collection.append(pick_url(tmp, url))
 
 for url in collection:
     r = requests.get(url)
