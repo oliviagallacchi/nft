@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NFT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>NFT Collection</h1>
+        <div class="display-container">
+            <div class="img-list">
+                {% for img in images %}
+                <img src="{{ url_for('static', filename=img) }}" alt="">
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

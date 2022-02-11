@@ -18,6 +18,13 @@ def home():
         images[t] = tmp
     return render_template("index.html", images=images)
 
+@app.route("/collection")
+def collection():
+    images = list(glob.glob("static/collection/*.png"))
+    images = list(map(lambda x: x[7:], images))
+    return render_template("collection.html", images=images)
+
+
 
 if __name__ == "__main__":
     app.run()
