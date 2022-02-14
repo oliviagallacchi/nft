@@ -37,6 +37,8 @@ def assemble_image():
             "parts": [
                 ".arms",
                 ".shoes",
+                ".faces",
+                ".hats",
             ]
         }
     ]
